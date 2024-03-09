@@ -1,8 +1,43 @@
 <html>
     <head>
+        <style>
+body  {
+    box-sizing: border-box;
+    border: 2px solid black;
+    background-color: deepskyblue;
+}
+
+form{
+    text-align: center;
+    margin: 50px;
+}
+label {
+    font-size: 16;
+    font-weight: bold;
+}
+input{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+        </style>
 
     </head>
     <body>
-        
+        <form id="form">    
+       <label for="fname">First Name : </label><input type="text" name="fname" id="fname"> <br><br>
+       <label for="fname">Last Name : </label><input type="text" name="lname" id="lname" >    <br></br>
+
+     <label for="gender"> <input type="radio" name="gender" value="Male">Male</label>
+     <label for="gender"><input type="radio" name="gender" value="Female">Female<br><br></label>
+<label for="Employee"> Employee ID : </label> <input type="number" name="e-name" id="eid">       <br><br>
+<label for="design">Designation : </label> <input type="text" name="design" id="design">         <br><br>
+<label for="numbor"> number : </label> <input type="number" name="mobile" id="mobile">        <br><br>
+    <input type="button" onclick="myfunction()" value="submit">
+</form>
+<script>
+    function myfunction() {
+       document.getElementById("form").innerHTML = "your data is submitted";
+    }
+</script>
     </body>
 </html>
