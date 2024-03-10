@@ -19,24 +19,45 @@ input{
     border: 2px solid black;
     border-radius: 10px;
 }
+#demo{
+}
         </style>
 
     </head>
     <body>
-        <form id="form">    
-       <label for="fname">First Name : </label><input type="text" name="fname" id="fname"> <br><br>
-       <label for="fname">Last Name : </label><input type="text" name="lname" id="lname" >    <br></br>
-
-     <label for="gender"> <input type="radio" name="gender" value="Male">Male</label>
-     <label for="gender"><input type="radio" name="gender" value="Female">Female<br><br></label>
-<label for="Employee"> Employee ID : </label> <input type="number" name="e-name" id="eid">       <br><br>
-<label for="design">Designation : </label> <input type="text" name="design" id="design">         <br><br>
-<label for="numbor"> number : </label> <input type="number" name="mobile" id="mobile">        <br><br>
-    <input type="button" onclick="myfunction()" value="submit">
+        <form  id="form">    
+      First Name :<input type="text" name="name" id="fname"> <br><br>
+      Last Name : <input type="text" name="lname" id="lname" >    <br></br>
+  <input type="radio" name="gender" id="gen" value="Male">Male
+<input type="radio" name="gender" id="gend" value="Female">Female<br><br>
+ Employee Id :<input type="number" name="e-name" id="eid">       <br><br>
+Designation : <input type="text" name="design" id="design">         <br><br>
+ number :<input type="number" name="mobile" id="mobile">        <br><br>
+    <button  type="button" onclick="myfunction()"> submit</button>
+    <div id="demo">
+<div id="name"></div>
+<div id="lastn"></div>
+<div id="employe"></div>
+<div id="desig"></div>
+<div id="phone"></div>
+    </div>
 </form>
 <script>
-    function myfunction() {
-       document.getElementById("form").innerHTML = "your data is submitted";
+    function myfunction(){
+      var name = document.getElementById("fname").value;
+      var lname = document.getElementById("lname").value;
+      var eid = document.getElementById("eid").value;
+      var design = document.getElementById("design").value;
+      var mobile = document.getElementById("mobile").value;
+    
+     document.getElementById("demo");
+           
+ document.getElementById("name").innerHTML= "Firstname :" + "  " + name;
+document.getElementById("lastn").innerHTML= "Lastname :" + "  " + lname;
+document.getElementById("employe").innerHTML= "Employee ID :" + "  " + eid;
+document.getElementById("desig").innerHTML= " Designation :" + "  " + design;
+document.getElementById("phone").innerHTML= "Mobile no :" + "  " + mobile;
+
     }
 </script>
     </body>

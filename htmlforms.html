@@ -1,35 +1,22 @@
 <html>
     <head>
-        <style>
-            body{
-                margin: 0;
-                padding: 0;
-            }
-.column{
-float: left;
-width: 45%;
-padding: 10px;
-height: 300px;
-}
-.row{
-    content: "";
-    clear: both;
-    display: table;
-}
-        </style>
+<style>
+
+</style>
     </head>
     <body>
-        <div class="row">
-            
-            <div class="column">
-                <h2>html</h2>
-            </div>
-            <div class="column">
-                <h2>html</h2>
-            </div>
-
-        </div>
+      
+        <form id="forms">
+<label for="name">Name:</label>
+<input type="text" name="name" id="name">
+<button type="button" id="input-btn" onclick="myfunction()"> value</button>
+</form>
+<p id="demo"></p>
+<script>
+function myfunction(){
+    var name = document.getElementById("name").value;
+   alert(name);
+}
+</script>
     </body>
-</html>  
-
-  
+</html>
